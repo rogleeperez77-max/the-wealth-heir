@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thank You — The Wealth Code</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#0f1c2c",
+        "secondary": "#D4AF37",
+        "surface": "#f9faf8",
+        "on-surface-variant": "#44474c",
+      },
+      fontFamily: {
+        "headline": ["Noto Serif"],
+        "body": ["Manrope"],
+      },
+    },
+  },
+}
+</script>
+</head>
+<body class="bg-surface text-primary font-body min-h-screen flex items-center justify-center px-6">
+
+<div class="max-w-2xl mx-auto text-center py-20 space-y-10">
+
+  <!-- Checkmark -->
+  <div class="w-24 h-24 bg-secondary/10 rounded-full flex items-center justify-center mx-auto">
+    <span class="material-symbols-outlined text-secondary text-6xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+  </div>
+
+  <div class="space-y-4">
+    <h1 class="font-headline text-4xl md:text-5xl font-bold">Your Wealth Code<br/><span class="italic font-normal text-secondary">Is Ready</span></h1>
+    <p class="text-on-surface-variant text-lg leading-relaxed max-w-lg mx-auto">
+      Thank you for your purchase. Click below to download your copy of The Wealth Code. You will also receive a confirmation email from Stripe.
+    </p>
+  </div>
+
+  <!-- Download Button -->
+  <a href="The_Wealth_Code.pdf" download class="inline-block bg-secondary text-white px-14 py-5 text-xl font-bold tracking-wide shadow-xl hover:brightness-110 transition-all duration-500 no-underline">
+    Download Your Ebook (PDF)
+  </a>
+
+  <div class="pt-8 space-y-6 text-on-surface-variant">
+    <div class="flex items-center justify-center gap-3">
+      <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 0, 'wght' 300;">lock</span>
+      <p class="text-sm">Your download link is private. Bookmark this page for future access.</p>
+    </div>
+
+    <hr class="border-primary/10 max-w-xs mx-auto"/>
+
+    <div class="space-y-3">
+      <p class="font-headline text-lg font-bold text-primary">What's Next?</p>
+      <div class="text-left max-w-md mx-auto space-y-3 text-base">
+        <div class="flex gap-3 items-start">
+          <span class="text-secondary font-bold shrink-0">01</span>
+          <p>Read Chapters 1-4 first. They reframe how you think about wealth.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-secondary font-bold shrink-0">02</span>
+          <p>Follow <strong>@thewealthheir</strong> on Instagram for daily insights.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <span class="text-secondary font-bold shrink-0">03</span>
+          <p>Start Chapter 18's 12-month action checklist today.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back link -->
+  <p class="text-sm text-on-surface-variant pt-4">
+    <a href="index.html" class="text-secondary hover:underline">Back to The Wealth Heir</a>
+  </p>
+
+</div>
+
+</body></html>
