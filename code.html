@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#44474c",
+              "primary-fixed": "#d6e4f9",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#ffe08b",
+              "secondary-fixed": "#ffe088",
+              "primary": "#000000",
+              "secondary": "#735c00",
+              "inverse-primary": "#bac8dc",
+              "surface-variant": "#e1e3e1",
+              "on-tertiary-fixed": "#241a00",
+              "inverse-surface": "#2e3130",
+              "on-on-surface": "#191c1b",
+              "surface": "#f9faf8",
+              "primary-container": "#0f1c2c",
+              "on-primary": "#ffffff",
+              "tertiary": "#745b00",
+              "background": "#f9faf8",
+              "primary-fixed-dim": "#bac8dc",
+              "on-background": "#191c1b",
+              "error": "#ba1a1a",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#4f3d00",
+              "on-primary-container": "#778598",
+              "surface-bright": "#f9faf8",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#eac249",
+              "surface-container-high": "#e7e8e6",
+              "on-secondary-fixed-variant": "#574500",
+              "surface-dim": "#d9dad8",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#f0f1ef",
+              "on-secondary-container": "#745c00",
+              "surface-tint": "#525f71",
+              "on-primary-fixed": "#0f1c2c",
+              "tertiary-container": "#cda72f",
+              "surface-container-low": "#f3f4f2",
+              "secondary-fixed-dim": "#e9c349",
+              "on-secondary-fixed": "#241a00",
+              "outline": "#74777d",
+              "on-primary-fixed-variant": "#3a4859",
+              "surface-container-highest": "#e1e3e1",
+              "outline-variant": "#c4c6cc",
+              "on-tertiary-fixed-variant": "#584400",
+              "on-error-container": "#93000a",
+              "secondary-container": "#fed65b",
+              "surface-container": "#edeeec"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .text-balance { text-wrap: balance; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl shadow-[0px_20px_50px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-slate-900 dark:text-slate-100">The Modern Prestige</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-amber-600 dark:text-amber-500 font-semibold border-b border-amber-600 font-['Noto_Serif'] tracking-tight" href="#">Collections</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Noto_Serif'] tracking-tight" href="#">Archives</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Noto_Serif'] tracking-tight" href="#">About</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-medium tracking-wide hover:scale-95 transition-transform duration-300">Browse Ebooks</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-height-[921px] flex items-center pt-32 pb-24 px-8 md:px-16 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.85]" data-alt="close-up of a luxury mechanical watch and tailored suit sleeve resting on a mahogany desk in soft ambient library lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyOWuO_wWnwC0rR3YiXrxjlwO-a2AG1ScFBaFi7ogqfFKlF6mra3Quh8JUzpEF4LBcp08IUiM0xPf4hi1NmCf1gHWxJF0r2GoZ3C0pK2b7zHtEBGnNETH86VQm-LNPeXDjVoxSfAQdJNPWSp6SHETimkWrCRS1M0Ij007X4w0gToViWIwNBySp3YwPXZGV6bHz_eEYTT7F-PSYc4quieAmOwynnboS7Lt4iVXK42LCEq297Q8jxcvupLOtlJeXUx5GbLq-mDhOIOY"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/80 via-primary-container/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<h1 class="font-headline text-5xl md:text-8xl text-white font-bold leading-[1.1] tracking-tight mb-8">
+                    The Art of <br/><span class="italic font-normal">Modern Prestige</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-white/80 max-w-2xl mb-12 leading-relaxed">
+                    Master the intricacies of the elite lifestyle. A curated collection of wisdom for those who demand excellence in every facet of existence.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-secondary text-on-secondary px-10 py-5 text-lg font-semibold tracking-wide shadow-xl hover:brightness-110 transition-all duration-500">
+                        Start Your Transformation
+                    </button>
+<button class="glass-card text-primary px-10 py-5 text-lg font-semibold tracking-wide border border-white/20">
+                        View Collections
+                    </button>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-32 px-8 md:px-24 bg-surface">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-20">
+<div class="space-y-6">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="hub">hub</span>
+</div>
+<h3 class="font-headline text-3xl font-bold text-primary">Strategic Networking</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Learn the silent language of power and build an ecosystem of high-value connections that transcend traditional networking.</p>
+</div>
+<div class="space-y-6">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="font-headline text-3xl font-bold text-primary">Wealth Preservation</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Sophisticated frameworks for managing legacy, navigating global markets, and securing multi-generational prosperity.</p>
+</div>
+<div class="space-y-6">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="checkroom">checkroom</span>
+</div>
+<h3 class="font-headline text-3xl font-bold text-primary">Personal Style</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">Refining your aesthetic signature. From bespoke tailoring to the nuances of social etiquette in exclusive circles.</p>
+</div>
+</div>
+</section>
+<!-- Ebook Collection -->
+<section class="py-32 bg-surface-container-low px-8 md:px-24">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-24 space-y-4">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-sm">The Curated Library</span>
+<h2 class="font-headline text-5xl md:text-6xl text-primary font-bold">Essential Monographs</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Book 1 -->
+<div class="group">
+<div class="relative aspect-[3/4] mb-8 overflow-hidden bg-slate-200">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="minimalist premium ebook cover titled The Executive Playbook with gold foil typography on dark navy linen texture background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc6AKk0aTPYBmNKEG8m5lnED7UdJK-_q7HNtrOd2kF53E3nO39X1gHKFKlukQe0fHhathbu-YvrsYJqGbB6WEv-PE371jNEjKSdnsW2Rxwm9fQCYpsv07RDoVVSEQJWR-jHeiuExMfNmfxp5TZR-DUCUEXvGDjBNh4tiVTfn5N44iEvDMJkUVEGTrbHPMSdm6SFkmFkxqKmtSg1d5CSbpUbumDAdYHN1pwV0dMdVshgiKCwgeR7s2ndEgpxk1SSqF7T3Y4akWU3B8"/>
+<div class="absolute inset-0 border-[1rem] border-white/10 pointer-events-none"></div>
+</div>
+<h4 class="font-headline text-3xl font-bold mb-3">The Executive's Playbook</h4>
+<p class="text-on-surface-variant mb-8 line-clamp-2">The definitive guide to boardroom dominance and high-stakes decision making for the modern leader.</p>
+<button class="w-full py-4 bg-primary text-on-primary font-semibold hover:bg-primary/90 transition-colors">Purchase Now — $89</button>
+</div>
+<!-- Book 2 -->
+<div class="group lg:mt-16">
+<div class="relative aspect-[3/4] mb-8 overflow-hidden bg-slate-200">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="luxury ebook cover titled Digital Nomad Wealth with minimalist sand-colored background and crisp black serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCku_vBAsSh5-5Sz3rhi0xPErGIdxDk0FzqaELS0Id1FUsZU4z2mJ0zyNA8mH8Nil8yt80t9GqSn3j1JybbJqTdl9_704EruOUUNs63lxkuI_kf3nedKqmmTy8T1akYdkggsCR8Bxc50OoTmYPtn5iAgKKhKzeOjzvM0YeiYaBvJoRyUBYDZQFJy-fIx1senEvtEwzaBFIWOp7MHtJMhw7wBjgGbZ8XEfBYCxh7oFLUuyQz5cz-W0z9yr7KUAeP2cqJvZWoLuqGEA8"/>
+<div class="absolute inset-0 border-[1rem] border-white/10 pointer-events-none"></div>
+</div>
+<h4 class="font-headline text-3xl font-bold mb-3">Digital Nomad Wealth</h4>
+<p class="text-on-surface-variant mb-8 line-clamp-2">Architecting a life of absolute freedom without compromising on the luxuries of high-tier living.</p>
+<button class="w-full py-4 bg-primary text-on-primary font-semibold hover:bg-primary/90 transition-colors">Purchase Now — $75</button>
+</div>
+<!-- Book 3 -->
+<div class="group">
+<div class="relative aspect-[3/4] mb-8 overflow-hidden bg-slate-200">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="elegant ebook cover titled Modern Etiquette featuring a small gold crest on a deep emerald green background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGnt8Rv_xBteVFPMq-ZmWjq-1bT114hN8cvCdoh074Xe7pryi-ci219OEQawysiRqqFinsd45ybmcyVD3LDHawr3HDPOYv7lOADu-RDA34PbuXuyRYkwMVFxbTM_no1_9uBEI8QVj_MKvxrw_Krtbwii6YpDhKSdC8wrUFY1fzIyql_Emu4XNcY8e42uNt4mC3tAAuRCat9rcrOk3OCE4SrkUFHB-fWYTtkkFfNkF3qLHMZvk50boGE8upo-eToDa1lS7nPNwqedM"/>
+<div class="absolute inset-0 border-[1rem] border-white/10 pointer-events-none"></div>
+</div>
+<h4 class="font-headline text-3xl font-bold mb-3">Modern Etiquette</h4>
+<p class="text-on-surface-variant mb-8 line-clamp-2">Navigating the unwritten rules of elite social circles with grace, poise, and effortless confidence.</p>
+<button class="w-full py-4 bg-primary text-on-primary font-semibold hover:bg-primary/90 transition-colors">Purchase Now — $65</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="py-40 px-8 bg-surface-container-highest overflow-hidden">
+<div class="max-w-6xl mx-auto relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+<div class="bg-surface-container-lowest p-12 shadow-[0px_20px_50px_rgba(0,0,0,0.04)] relative">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 block" data-icon="format_quote">format_quote</span>
+<p class="font-headline text-2xl italic text-primary leading-relaxed mb-10">
+                            "The insights within these monographs provided the missing piece in my professional trajectory. It's not just information; it's an elevation of mindset."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<p class="font-bold text-primary">Julian V. Rossi</p>
+<p class="text-sm text-on-surface-variant tracking-wider uppercase">Verified Client • Private Equity</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-12 shadow-[0px_20px_50px_rgba(0,0,0,0.04)] relative md:mt-24">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 block" data-icon="format_quote">format_quote</span>
+<p class="font-headline text-2xl italic text-primary leading-relaxed mb-10">
+                            "Finally, a resource that understands the nuances of luxury. The Wealth Preservation chapter alone is worth ten times the investment."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<p class="font-bold text-primary">Elena St. James</p>
+<p class="text-sm text-on-surface-variant tracking-wider uppercase">Verified Client • Founder</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative background text -->
+<div class="absolute -top-20 -left-20 text-[20rem] font-headline font-bold text-primary/5 select-none pointer-events-none">P</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-32 px-8 bg-primary text-white text-center">
+<div class="max-w-3xl mx-auto space-y-12">
+<h2 class="font-headline text-4xl md:text-6xl font-bold">Join the Inner Circle</h2>
+<p class="text-xl text-white/60 font-light leading-relaxed">
+                    Receive exclusive invitations to upcoming ebook launches and private lifestyle curations.
+                </p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-white/5 border-b-2 border-white/10 text-white p-5 focus:outline-none focus:border-secondary transition-colors text-lg" placeholder="Your executive email" type="email"/>
+<button class="bg-secondary text-on-secondary px-12 py-5 font-bold tracking-widest uppercase text-sm hover:brightness-110 transition-all">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/20 bg-slate-50 dark:bg-slate-900 mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-serif font-bold text-slate-900 dark:text-white">The Modern Prestige</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-2">© 2024 The Modern Prestige. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Shipping</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors duration-300 font-['Manrope'] text-sm tracking-wide" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
